@@ -1,16 +1,14 @@
 function drawTree (n) {
-	for ( var i = 1 ; i < n; i++) {
-		var pop = ' ';
-		var space = '';
+	for (var i = 0; i < n; i++) {
+		var line = '';
 		
-		for (var j= 1; j < n-i; j++ ) {
-			space = space + pop
+		for (var j = 0; j < n - i -1; j++ ) {
+			line += ' ';
 		}
-		var star = space + '*';
-		for ( var k = 1 ; k < i*2-1; k++) {
-			star += '*';
+		for (var k = 0; k <= i * 2; k++) {
+			line += '*';
 		}
-		console.log(star);
+		console.log(line);
 	}	
 }
 
